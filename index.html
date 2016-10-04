@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Homework 11-12</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/tmpl.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+	    <div class="carousel-arrow-left"><span><< Влево</span></div>
+	    <div class="carousel-hider">
+	        <ul class="carousel-list">
+	            <li class="carousel-element"><img src="img/image1.jpg"><p>Sport 1</p></li>
+	            <li class="carousel-element"><img src="img/image2.jpg"><p>Sport 2</p></li>
+	            <li class="carousel-element"><img src="img/image3.jpg"><p>Sport 3</p></li>
+	            <li class="carousel-element"><img src="img/image4.jpg"><p>Sport 4</p></li>
+	            <li class="carousel-element"><img src="img/image1.jpg"><p>Sport 5</p></li>
+	            <li class="carousel-element"><img src="img/image2.jpg"><p>Sport 6</p></li>
+	        </ul>
+	    </div>
+	    <div class="carousel-arrow-right"><span>Вправо >></span></div>
+	</div>
+	<div class="wrapper">
+		<button id="second-task">Show second task</button>
+	</div>
+</body>
+	<script type="text/html" id="tmpl-script">
+		<div class="paper">
+		<h1><%= data.name %></h1>
+		<img src="<%= data.img %>">
+		<p><%= data.description %></p>
+		<div class="data.info">
+			<p>Хочу учить фронтенд, потому что:</p>
+			<ul>
+			<% for(var i=0; i<data.answers.length; i++){ %>
+				<li><%= data.answers[i] %></li>
+			<% } %>
+				
+			</ul>
+		</div>
+		<div class="info">
+			<p>Мой контактный номер<br><%= data.phone %><br></p>
+			<p>Мой профиль в Facebook<br><a href="<%= data.facebook %>">facebook.com</a></p>
+		</div>
+		<div class="info">
+			<p>Мой фидбек:<br><%= data.feedback %></p>
+		</div>
+
+		</div>
+	</script>
+	<script src="js/script.js"></script>
+	<script src="js/carousel.js"></script>
+</html>

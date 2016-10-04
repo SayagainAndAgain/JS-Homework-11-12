@@ -1,0 +1,104 @@
+body{
+	/*text-align: center;*/
+	background-color: #EFEFEF;
+	font-size: 18px;
+	
+	-moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+	list-style: none;
+}
+.wrapper{
+	/*height: 600px;*/
+	width: 1430px;
+	min-width: 1430px;
+	margin: 0 auto;
+	text-align: center;
+}
+.paper{
+	border:1px solid grey;
+	box-sizing: border-box;
+	display: table;
+	margin: 4px auto;
+	height:751px;
+	padding:0px 50px 0px 50px;
+	width:513px;
+	background-color: white;
+	text-align: left;
+}
+h1{
+	margin: 46px 0px 20px 0px;
+	font-size: 22px;
+	text-align: center;
+}
+img{
+	display: block;
+	height: 130px;
+	margin: 0 auto;
+}
+p{
+	margin: 10px 13px 17px 13px;
+}
+ul{
+	padding: 7px 0px 0px 37px;
+}
+li{
+	padding: 5px 0px 0px 0px;
+}
+br{
+	line-height: 150%;
+}
+
+.info{
+	border-top:1px solid grey; 
+	padding: 15px 0px 0px 0px;
+}
+
+/*CAROUSEL*/
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    min-width: 600px;
+    min-height: 400px;
+}
+
+.carousel-hider {
+    width: 1200px;
+    overflow: hidden;
+    float: left;
+}
+ 
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+    margin-top: 180px;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
